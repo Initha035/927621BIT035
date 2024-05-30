@@ -32,14 +32,14 @@ const App = () => {
 
   const fetchToken = async () => {
     try {
-      const response = await axios.post("http://20.244.56.144/test/auth", {
-        companyName: "GoMart",
-        clientID: "db80f816-b331-430f-8ad9-40cf7f63a090",
-        clientSecret: "lKGslAxjMJTHymmv",
-        ownerName: "Initha Murugesan",
-        ownerEmail: "inithamurugesan2003@gmail.com",
-        rollNo: "927621BIT035",
-      });
+      const response = await axios.post("http://20.244.56.144/test/auth",{
+    companyName: 'goMart',
+    clientID: 'd16c360a-877f-40e2-b3a6-ffe6e646172b',
+    clientSecret: 'SJTspgSPZkdjTUqK',
+    ownerName: 'Initha Murugesan',
+    ownerEmail: '927621bit035@mkce.ac.in',
+    rollNo: '927621bit035'
+  });
       return response.data.access_token;
     } catch (error) {
       console.error("Error fetching token:", error);
